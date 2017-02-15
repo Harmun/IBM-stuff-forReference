@@ -1,0 +1,17 @@
+000100160921                                            UNIQUE
+000101160921     A          R STUDENTSR                 TEXT('STUDENTS REGISTER')
+000102160921     A            STUDENTNO      9S 0       COLHDG('STUDENT' 'NUMBER')
+000103161030     A                                      EDTWRD('0   -   -   ')
+000104160921     A            FIRSTNAME     15          COLHDG('FIRST NAME')
+000105160921     A            LASTNAME      20          COLHDG('LAST NAME')
+000106160921     A            BIRTHDATE       L
+000107160921     A            PHONE         10S 0       COLHDG('PHONE' 'NUMBER')
+000108161031     A                                      EDTWRD('0(   )&   -    ')
+000109160921     A            ADDRESS       30          COLHDG('STREET' 'ADDRESS')
+000110160921     A            CITY          15A
+000111160921     A            PROVINCE       2A         COLHDG('PROV' 'CODE')
+000112160921
+000113160921     A            POSTALCODE     6A         COLHDG('POSTAL' 'CODE')
+000114160921     A            FEESOWED       7P 2       COLHDG('FEES' 'OWED')
+000115160921     A            FINESOWED      7P 2       COLHDG('FINES' 'OWED')
+000116160921     A          K STUDENTNO
