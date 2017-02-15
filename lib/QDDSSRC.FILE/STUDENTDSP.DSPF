@@ -1,0 +1,52 @@
+000100161107     A                                      DSPSIZ(24 80 *DS3)
+000101161115     A          R RECORD1                   CA03(03 'F3 EXIT')
+000102161107     A                                  4  2'Student Number:'
+000103161107     A                                  2 28'Student Information'
+000104161107     A                                  8  2'Birth Date:'
+000105161107     A                                  4 39'Phone:'
+000106161107     A                                 10  2'Address:'
+000107161107     A                                 20 32'F3 - Exit'
+000108161107     A                                  2 70DATE
+000109161107     A                                      EDTCDE(Y)
+000110161107     A                                  2  2USER
+000111161107     A                                  6  2'Name:'
+000112161115     A                                 15  2'Fees Owed:'
+000113161115     A                                 17  2'Fines Owed:'
+000114161115     A            FULLNAME      31   O  6 19
+000115161107     A            STUDENTNO R        O  4 19REFFLD(STUDENTSR/STUDENTNO +
+000116161107     A                                      DA233A04/STUDENTS)
+000117161115     A            BIRTHDATE R        O  8 19REFFLD(STUDENTSR/BIRTHDATE +
+000118161115     A                                      DA233A04/STUDENTS)
+000119161107     A            PHONE     R        O  4 47REFFLD(STUDENTSR/PHONE DA233A04/STU-
+000120161115     A                                      DENTS)
+000123161107     A            ADDRESS   R        O 10 19REFFLD(STUDENTSR/ADDRESS +
+000124161107     A                                      DA233A04/STUDENTS)
+000125161107     A            CITY      R        O 11 19REFFLD(STUDENTSR/CITY DA233A04/STUD-
+000126161107     A                                      ENTS)
+000127161107     A            PROVINCE  R        O 11 35REFFLD(STUDENTSR/PROVINCE +
+000128161107     A                                      DA233A04/STUDENTS)
+000129161107     A            POSTALCODER        O 12 19REFFLD(STUDENTSR/POSTALCODE +
+000130161107     A                                      DA233A04/STUDENTS)
+000131161115     A            FINESOWED R        O 17 19REFFLD(STUDENTSR/FINESOWED +
+000132161115     A                                      DA233A04/STUDENTS)
+000133161115     A                                      EDTCDE(1)
+000134161115     A  40                                  DSPATR(RI)
+000135161107     A            FEESOWED  R        O 15 19REFFLD(STUDENTSR/FEESOWED +
+000136161115     A                                      DA233A04/STUDENTS)
+000137161115     A                                      EDTCDE(1)
+000138161115     A  41                                  DSPATR(RI)
+000143161107     A          R RECORD2
+000144161107     A                                  5 16'Total Students: '
+000145161107     A                                  7 20'Fines Owed: '
+000146161107     A                                  8 21'Fees Owed: '
+000147161107     A            TOTALSTUD      5Y 0O  5 33EDTCDE(1)
+000148161107     A            TOTALFEES      7Y 2O  8 33EDTCDE(1)
+000149161107     A            TOTALFINES     7Y 2O  7 33EDTCDE(1)
+000150161107     A            TOTALOWING     7Y 2O 10 32EDTCDE(1 $)
+000151161107     A                                 10 19'Total Owing:'
+000152161107     A                                  2 27'Student Summary'
+000153161107     A                                  2 70DATE
+000154161107     A                                      EDTCDE(Y)
+000155161107     A                                  3 70TIME
+000156161107     A                                  2  2USER
+000157161115     A                                  3  2'Jay-Ceyda Ansin'

@@ -1,0 +1,26 @@
+000001161130     A          R RECORD1
+000002161130     A                                  1  5USER
+000003161130     A                                  2  5'CEYDA ANSIN'
+000004161130     A                                  1 28'Payroll Program Completed'
+000005161130     A                                  1 70DATE
+000006161130     A                                      EDTCDE(Y)
+000007161130     A                                  5 14'Rates:'
+000008161130     A                                 13 14'Totals:'
+000009161130     A                                  7 28'Day Rate:'
+000010161130     A                                  8 28'Afternoon Rate:'
+000011161130     A                                  9 28'Night Rate:'
+000012161130     A                                 14 28'Regular Pay:'
+000013161130     A                                 15 28'Overtime Pay:'
+000014161130     A                                 16 28'Company Payout:'
+000021161130     A            DAYRATE   R        O  7 50REFFLD(SHIFTRATES/DAYRATE +
+000022161130     A                                      SENECAPAY/SHIFTRATES)
+000023161130     A                                      EDTCDE(1)
+000024161130     A            AFTNRATE  R        O  8 50REFFLD(SHIFTRATES/AFTNRATE +
+000025161130     A                                      SENECAPAY/SHIFTRATES)
+000026161130     A                                      EDTCDE(1)
+000027161130     A            NIGHTRATE R        O  9 50REFFLD(SHIFTRATES/NIGHTRATE +
+000028161130     A                                      SENECAPAY/SHIFTRATES)
+000029161130     A                                      EDTCDE(1)
+000100161130     A            TOTREGPAY      9  2  14 50EDTCDE(1)
+000101161130     A            TOTOVTPAY      9  2  15 50EDTCDE(1)
+000102161130     A            TOTEMPPAY      9  2  16 49EDTCDE(1 $)

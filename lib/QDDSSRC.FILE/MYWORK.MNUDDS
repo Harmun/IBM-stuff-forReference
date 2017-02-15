@@ -1,0 +1,36 @@
+000001161116     A* Free Form Menu: MYWORK                                                                      
+000010161116     A*%%TS  SD  20161116  140112  DA233A04    REL-V7R2M0  5770-WDS                                 
+000020161116     A*%%EC                                                                                         
+000030161116     A                                      DSPSIZ(24 80 *DS3                  -                    
+000040161116     A                                             27 132 *DS4)                                     
+000050161116     A                                      CHGINPDFT                                               
+000060161116     A                                      INDARA                                                  
+000070161116     A                                      PRINT(*LIBL/QSYSPRT)                                    
+000080161115     A          R MYWORK                                                                            
+000090161115     A*%%TS  SD  20161115  125256  DA233A04    REL-V7R2M0  5770-WDS                                 
+000100161115     A                                      DSPMOD(*DS3)                                            
+000110161115     A                                      LOCK                                                    
+000120161115     A                                      SLNO(01)                                                
+000130161115     A                                      CLRL(*ALL)                                              
+000140161115     A                                      ALWROL                                                  
+000150161115     A                                      CF03                                                    
+000160161115     A                                      HELP                                                    
+000170161115     A                                      HOME                                                    
+000180161115     A                                      HLPRTN                                                  
+000190161115     A                                  1  2'MYWORK'                                                
+000200161115     A                                      COLOR(BLU)                                              
+000210161115     A                                  3  2'Select one of the following:'                          
+000220161115     A                                      COLOR(BLU)                                              
+000230161115     A                                  5  7'1. Enter Marks'                                        
+000240161115     A                                  6  7'2. Investigate System'                                 
+000250161115     A                                  7  7'3. View Student Marks'                                 
+000260161115     A                                  8  7'4. Add/Change/Delete Students'                         
+000270161115     A                                  9  7'5. Show System Level'                                  
+000280161115     A                                 10  7'6. View My Objects (Default is Pro-                    
+000290161115     A                                      grams)'                                                 
+000300161115     A                                 11  7'7. View My Source Files'                               
+000310161115     A* CMDPROMPT  Do not delete this DDS spec.                                                     
+000320161115     A                                019  2'Selection or command              -                    
+000330161115     A                                          '                                                   
+000340161115     A                                  1 28'My Classroom Work in IBC233'                           
+000350161115     A                                 13  6'90. Sign Off'                                          

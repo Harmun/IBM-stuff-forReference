@@ -1,0 +1,33 @@
+000001161005     A                                      DSPSIZ(24 80 *DS3)
+000002161005     A          R RECORD1
+000003161005     A                                      CF03(03)
+000004161005     A                                      CF21(21)
+000005161005     A                                  1 38'LAB 4'
+000006161005     A                                  1 64DATE
+000008161005     A                                      EDTCDE(Y)
+000009161005     A                                  2 64TIME
+000010161005     A                                  1  3USER
+000012161012     A                                  2  3'Ceyda Ansin'
+000013161005     A                                  6  3'Please select one of the following-
+000014161005     A                                       options:'
+000015161005     A                                  7 14'1. Currency Symbol Used by this -
+000016161005     A                                      System'
+000017161005     A                                  8 14'2. IPL type (Initial Program Loa-
+000018161005     A                                      d for System Reboot)'
+000019161005     A                                  9 14'3. Signed on User''s Message Que-
+000020161005     A                                      ue'
+000021161005     A                                 10 14'4. Initial number of active jobs-
+000022161005     A                                       for storage allocation'
+000023161005     A                                 11 14'5. Display System Serial Number'
+000024161005     A                                 12 14'6. Maximum Password Length'
+000025161005     A                                 13 14'7. Previous sign on by signed on-
+000026161005     A                                       user'
+000027161005     A                                 15 17'Option: '
+000028161005     A                                 23  4'F3=Exit'
+000029161005     A                                 23 17'F21=Command Line'
+000031161005     A            OPTION         2   B 15 30
+000032161005     A  30                                  DSPATR(RI PC)
+000033161011     A            MSGTXT        70   O 19  6
+000034161005     A  30                             15 43'A valid opton must be entered'
+000100161005
+000102161005

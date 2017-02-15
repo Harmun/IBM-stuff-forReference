@@ -1,0 +1,3 @@
+000100161130     A          R ALLSHIFT                  PFILE(SENECAPAY/ALLSHIFT)
+000101161202     A          K EMPNUM                                                        K IS KEY FIELD
+000102161202     A          S WORKSHIFT                 COMP(EQ 'D')                        S IS SELECT ONLY 'D'

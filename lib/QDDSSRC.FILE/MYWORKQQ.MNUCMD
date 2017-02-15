@@ -1,0 +1,9 @@
+000001161116MYWORKQQ,1                                                                                          
+0000101611160001 CALL MARKSRPG2                                                                                 
+0000111611160002 CALL LAB4CL                                                                                    
+0000121611160003 RUNQRY *N STDNTMARKS                                                                           
+0000131611160004 UPDDTA STUDENTS                                                                                
+0000141611160005 CALL DSPSYSLVP PARM('*MSGLINE' '*NO' '*NO')                                                    
+0000151611160006 ?WRKOBJPDM LIB(DA233A04) OBJTYPE(*PGM)                                                         
+0000161611160007 WRKOBJPDM LIB(DA233A04) OBJATR('PF-SRC')                                                       
+0000171611160090 SIGNOFF                                                                                        

@@ -1,0 +1,66 @@
+000100161012PGM
+000101161011DCLF LAB4DF
+000102161012DCL &CURSYM     *CHAR 1       /* 1. DONE */
+000103161012DCL &IPLSTS     *CHAR 1       /* 2. DONE */
+000104161012DCL &MSGQ       *CHAR 10      /* 3. DONE */
+000105161012DCL &MSGQLIB    *CHAR 10      /* 3. DONE */
+000106161012DCL &ACTJOB     *DEC (5 0)    /* 4. DONE */
+000107161012DCL &SRLNBR     *CHAR 8       /* 5. DONE */
+000108161012DCL &PWDMAXLEN  *DEC (5 0)    /* 6. DONE */
+000109161012DCL &PRVSIGN    *CHAR 13      /* 7. DONE */
+000111161011
+000112161012
+000113161011SNDRCVF
+000114161012DOWHILE (&IN03 = '0')
+000115161012                                                                     /* ADD INITIALIZATION RESET? */
+000116161012IF (&IN21 = '1') CALL QUsCmdLn                                       /* CHECK IT */
+000118161012/**************************************** OPTIONS ****************************************/
+000119161011   SELECT
+000120161011      WHEN (&OPTION = '1' *OR &OPTION = '01') DO                     /* 1. DONE */
+000121161011         RTVSYSVAL SYSVAL(QCURSYM) RTNVAR(&CURSYM)
+000122161011         CHGVAR &MSGTXT ('The currency symbol is set to' +
+000123161011                         *BCAT &CURSYM)
+000124161012      ENDDO
+000125161012      WHEN (&OPTION = '2' *OR &OPTION = '02') DO                     /* 2. DONE */
+000126161012         RTVSYSVAL SYSVAL(QIPLSTS) RTNVAR(&IPLSTS)
+000128161011         CHGVAR &MSGTXT ('IPL status indicator is' +
+000129161012                         *BCAT &IPLSTS *CAT '=Operator panel IPL')
+000130161011      ENDDO
+000131161012      WHEN (&OPTION = '3' *OR &OPTION = '03') DO                     /* 3. DONE */
+000132161012         RTVUSRPRF MSGQ(&MSGQ) MSGQLIB(&MSGQLIB)
+000133161011         CHGVAR &MSGTXT ('Signed on Users message queue is ' +
+000134161012                         *BCAT &MSGQLIB *TCAT '/' *CAT &MSGQ)
+000135161011      ENDDO
+000136161011      WHEN (&OPTION = '4' *OR &OPTION = '04') DO                     /* 4. DONE */
+000137161012         RTVSYSVAL SYSVAL(QACTJOB) RTNVAR(&ACTJOB)
+000138161011         CHGVAR &MSGTXT ('Initial number of active jobs for which storage is allocated is: ' +
+000139161011                         *CAT %CHAR(&ACTJOB))
+000140161011      ENDDO
+000141161011      WHEN (&OPTION = '5' *OR &OPTION = '05') DO                     /* 5. DONE */
+000142161012         RTVSYSVAL SYSVAL(QSRLNBR) RTNVAR(&SRLNBR)
+000143161011         CHGVAR &MSGTXT ('The system serial number is' +
+000144161011                         *BCAT &SRLNBR)
+000145161011      ENDDO
+000146161011      WHEN (&OPTION = '6' *OR &OPTION = '06') DO                     /* 6. DONE */
+000147161011         RTVSYSVAL SYSVAL(QPWDMAXLEN) RTNVAR(&PWDMAXLEN)
+000148161011         CHGVAR &MSGTXT ('Maximum password length is ' +
+000149161011                         *CAT %CHAR(&PWDMAXLEN))
+000150161011      ENDDO
+000151161012      WHEN (&OPTION = '7' *OR &OPTION = '07') DO                     /* 7. DONE */
+000152161012         RTVUSRPRF PRVSIGN(&PRVSIGN)
+000154161011         CHGVAR &MSGTXT ('Signed on Users previous signon was on' +
+000155161012                         *BCAT %SST(&PRVSIGN 2 2) *TCAT '/' +
+000156161012                         *TCAT %SST(&PRVSIGN 4 2) *TCAT '/' +
+000157161012                         *TCAT %SST(&PRVSIGN 6 2) +
+000158161012                         *BCAT %SST(&PRVSIGN 8 2) *TCAT ':' +
+000159161012                         *TCAT %SST(&PRVSIGN 10 2) *TCAT ':' +
+000160161012                         *TCAT %SST(&PRVSIGN 12 2))
+000161161011      ENDDO
+000162161011      OTHERWISE CHGVAR &IN30 '1'
+000163161011   ENDSELECT
+000164161012/*************************************** OPTIONS END *************************************/
+000165161011   SNDRCVF
+000166161011   CHGVAR &IN30 '0'
+000167161011ENDDO
+000168161005ENDPGM
+000169161005
