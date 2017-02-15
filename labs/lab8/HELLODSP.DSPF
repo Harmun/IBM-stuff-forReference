@@ -1,0 +1,7 @@
+000100161115     A          R RECORD1
+000101161115     A                                  4 22'H e l l o    U n i v e r s e'
+000102161115     A            PLANET         8   O  7 39
+000103161115     A                                  7 18'Destination Planet:'
+000104161115     A  99                              9 18'Passenger Name:'
+000105161115     A  99        FULLNAME      31   O  9 39
+000106161115

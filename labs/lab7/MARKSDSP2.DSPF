@@ -1,0 +1,62 @@
+000100161115     A          R RECORD1
+000101161115     A                                  1 71DATE
+000102161115     A                                      EDTCDE(Y)
+000103161115     A                                  2  3SYSNAME
+000104161115     A                                  2 71TIME
+000105161115     A                                  1  3USER
+000106161115     A                                  4 21'Test 1:'
+000107161115     A                                  1 33'Marks Calculator'
+000108161115     A                                  5 21'Test 2:'
+000109161115     A                                  6 21'Test 3:'
+000110161115     A                                  7 21'Labs:'
+000111161115     A                                  8 21'Exam:'
+000112161115     A            TEST1          3  0B  4 30RANGE(0 100)
+000113161115     A  99                                  DSPATR(PR)
+000114161115     A            TEST2          3  0B  5 30RANGE(0 100)
+000115161115     A  99                                  DSPATR(PR)
+000116161115     A            TEST3          3  0B  6 30RANGE(0 100)
+000117161115     A  99                                  DSPATR(PR)
+000118161115     A            LABS           3  0B  7 30RANGE(0 30)
+000119161115     A  99                                  DSPATR(PR)
+000120161115     A            EXAM           3  0B  8 30RANGE(0 100)
+000121161115     A  99                                  DSPATR(PR)
+000122161115     A  40                              4 38'This Test Mark Dropped'
+000123161115     A  50                              5 38'This Test Mark Dropped'
+000124161115     A  60                              6 38'This Test Mark Dropped'
+000125161115     A  70                              8 38'Automatic F with Exam Average belo-
+000126161115     A                                      w 50'
+000127161115     A                                      DSPATR(RI)
+000128161115     A                                      COLOR(RED)
+000129161115     A          R RECORD2                   CA03(03 'EXIT')
+000130161115     A                                      OVERLAY
+000131161115     A                                 12 21'Tests:'
+000132161115     A                                 14 21'Final Mark:'
+000133161115     A                                 16 21'Final Grade:'
+000134161115     A                                 20 11'F3 = Exit'
+000135161115     A            TESTOVRALL     3Y 0O 12 34EDTCDE(1)
+000136161115     A            NUMGRADE       3Y 0O 14 34EDTCDE(1)
+000137161115     A            LETGRADE       2   O 16 35
+000138161115     A  80                             12 41'Automatic F with Test Average belo-
+000139161115     A                                      w 50'
+000140161115     A                                      DSPATR(RI)
+000141161115     A                                      COLOR(RED)
+000142161115     A          R RECORD3
+000143161115     A                                  1  2'Author'
+000144161115     A                                  1 33'Marks Statistics'
+000145161115     A                                  5 35'Pass:'
+000146161115     A                                  7 35'Fail:'
+000147161115     A                                  9 21'Total Mark Queries:'
+000148161115     A                                 11 26'Average Grade:'
+000149161115     A            PASS           3Y 0O  5 43EDTCDE(1)
+000150161115     A            TOTAL          3Y 0O  9 43EDTCDE(1)
+000151161115     A            FAIL           3Y 0O  7 43EDTCDE(1)
+000152161115     A            AVERAGE        3Y 0O 11 43EDTCDE(1)
+000153161115     A                                  1 68DATE
+000154161115     A                                      EDTCDE(Y)
+000155161115     A                                  2 68TIME
+000156161115
+000157161115     A*%%RS+<record-sequences>
+000158161115     A*%%RS+ <sequence name="Untitled">
+000159161115     A*%%RS+  <device type="display" width="80" height="24" />
+000160161115     A*%%RS+ </sequence>
+000161161115     A*%%RS </record-sequences>
