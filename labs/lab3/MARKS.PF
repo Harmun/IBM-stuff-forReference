@@ -1,0 +1,5 @@
+000100161031     A          R MARKSR
+000102161031     A            STUDENTID      9P 0       COLHDG('STUDENT' 'ID')
+000103161031     A            COURSE_CD      6          COLHDG('COURSE' 'CODE')
+000104161031     A            FINAL_MARK     3S 0       COLHDG('FINAL' 'MARK')
+000105161031     A            DATERUN         L         COLHDG('DATE' 'RUN')
